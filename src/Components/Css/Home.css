@@ -1,0 +1,111 @@
+.home {
+  background-color: #4b4568;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home h3 {
+  color: #fb7592;
+}
+
+.home h1 {
+  color: aqua;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.homeText {
+  line-height: 45px;
+  padding: 5vh;
+}
+
+.home-h3-intro {
+  width: 80%;
+  margin-top: 3vh;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.home-contact-button {
+  width: 30vh;
+  padding: 10px 0px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: aqua;
+  font-size: 17px;
+  font-weight: 700;
+  border: 2px solid aqua;
+  border-radius: 1cm;
+  cursor: pointer;
+}
+
+.home-contact-button:hover {
+  background-color: aqua;
+  color: #4b4568;
+}
+
+.home-contact-button:active {
+  background-color: transparent;
+  color: aqua;
+}
+
+/*   responsive designs */
+
+@media screen and (max-width: 905px) {
+  .home h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .home h1 {
+    font-size: 30px;
+  }
+  .home h3 {
+    font-size: 18px;
+  }
+  .home-img {
+    width: 50vh;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .home {
+    flex-direction: column;
+  }
+  .home-img {
+    margin-top: -1cm;
+  }
+  .home h1 {
+    font-size: 40px;
+  }
+  .homeText {
+    margin-top: 1cm;
+    text-align: center;
+  }
+  .home-h3-intro {
+    width: 100%;
+    margin-top: 3vh;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .home h1 {
+    font-size: 30px;
+  }
+  .home h3 {
+    font-size: 16px;
+  }
+  .home-img {
+    width: 40vh;
+  }
+}

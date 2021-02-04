@@ -1,0 +1,109 @@
+.skills {
+  height: 100%;
+  background-color: #4b4568;
+  padding: 1cm;
+  margin-top: 3cm;
+}
+
+.skills-title {
+  text-align: center;
+  color: #fb7592;
+}
+
+.skills-border {
+  width: 3cm;
+  height: 4px;
+  background-color: #fb7592;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-img {
+  width: 60vh;
+  display: block;
+  margin-top: 5cm;
+  position: relative;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    top: 1cm;
+  }
+  50% {
+    top: 1.5cm;
+  }
+  100% {
+    top: 1cm;
+  }
+}
+
+.skill-lang-anim {
+  position: relative;
+  animation-name: pulseslow;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulseslow {
+  0% {
+    top: 0cm;
+  }
+  50% {
+    top: 0.4cm;
+  }
+  100% {
+    top: 0cm;
+  }
+}
+
+.skills-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 5vh;
+}
+
+.skills-language {
+  color: aqua;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.skills-language h2 {
+  color: #fb7592;
+  padding: 1vh 0px;
+}
+
+@media screen and (max-width: 836px) {
+  .skills-img {
+    width: 50vh;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .skills {
+    margin-top: 1cm;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .skills-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .skills-skillLang-img {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+}

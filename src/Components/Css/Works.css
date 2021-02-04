@@ -1,0 +1,82 @@
+.works {
+  height: 100%;
+  background-color: #4b4568;
+  padding: 1cm;
+}
+
+.works-title {
+  text-align: center;
+  color: #fb7592;
+}
+
+.works-border {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fb7592;
+  width: 18vh;
+  height: 4px;
+}
+
+.works-workcard-title {
+  position: relative;
+  color: aqua;
+  width: 65vh;
+  padding: 1cm;
+}
+.works-workcard-title img {
+  width: 100%;
+}
+
+.works-card-container {
+  margin-top: 1.5cm;
+  display: flex;
+  justify-content: center;
+}
+
+.work-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  position: relative;
+  top: 2vh;
+  border: 1px solid rgb(106, 117, 126);
+  color: rgb(106, 117, 126);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.work-button:hover {
+  border-color: aqua;
+  color: aqua;
+}
+
+.work-button:active {
+  color: rgb(106, 117, 126);
+  border-color: rgb(106, 117, 126);
+}
+
+@media screen and (max-width: 375px) {
+  .works-workcard-title h4 {
+    font-size: 14px;
+  }
+  .work-button {
+    font-size: 11px;
+  }
+  .works-workcard-title h2 {
+    font-size: 17px;
+  }
+  .works-workcard-title h4 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 881px) {
+  .works-card-container {
+    flex-direction: column;
+    align-items: center;
+    flex-flow: wrap;
+  }
+}
